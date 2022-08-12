@@ -1,0 +1,33 @@
+@import url(./navigation.css);
+@import url(./home-section.css);
+@import url(./footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;400;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.main-container{
+    display: grid;
+    background-color:#986c43;
+    grid-template-rows: 1fr;
+}
+.main-container .home-section{
+    display: grid;
+    grid-template-rows: 500px 1fr;
+}
+
+.main-container .about-the-team{
+    height: 100vh;
+}

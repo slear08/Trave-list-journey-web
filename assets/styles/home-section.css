@@ -1,0 +1,207 @@
+/* header section */
+.home-section header .image-presentation{ 
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.home-section header .image-presentation div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: imageAnimation 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+    animation-direction: alternate;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+@keyframes imageAnimation {
+    0%{
+        background-image: url(/assets/images/image1.png);
+    }
+    50%{
+        background-image: url(/assets/images/image2.png);
+    }
+    100%{
+        background-image: url(/assets/images/image3.png);
+    }
+}
+/* section text */
+.home-section section{  
+    display: flex;
+    margin: 50px;
+    column-gap: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+    font-size: 20px;
+
+}
+.home-section section h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.home-section section p{
+    text-indent: 50px;
+}
+/* section image*/
+.home-section section .section-image-container img{
+    height: 400px;
+    width: 500px;
+    border-radius: 30%;
+}
+
+/* about the team section */
+.about-the-team {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+.about-the-team .about-banner{
+    background-color: #222222ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-the-team .team-gallery-container {
+    display: grid;
+    grid-template-columns: 1fr repeat(3,250px) 1fr;
+    grid-auto-rows: 300px;
+}
+.about-the-team .team-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  
+}
+.about-the-team .team-image-container:nth-child(1){
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.about-the-team .team-image-container:nth-child(2){
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+.about-the-team .team-image-container:nth-child(3){
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+.about-the-team .team-image-container:nth-child(4){
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.about-the-team .team-image-container:nth-child(5){
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.about-the-team .team-image-container:nth-child(6){
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+.about-the-team .team-image-container .member-image-container{
+    background-color: #222222ad;
+    padding: 5px;
+    border: solid rgb(37, 36, 36) 3px;
+}
+.about-the-team .team-image-container .member-image-container img{
+    border-radius: 50%;
+    border: solid  #986c43 2px;
+}
+/* message us section */
+.message-us .message-us-banner{
+    background-color: #222222ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message-us .message-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.message-us .message-form .first-last-name,.email{
+    margin-bottom: 20px;
+}
+.message-us .message-form .first-last-name>input{
+    width: 250px;
+    height: 40px;
+    color: black;
+    margin-right: 30px;
+    border-color: black;
+}
+.message-us .message-form .email input{
+    width: 250px;
+    height: 40px;
+    color: black;
+    margin-right: 30px;
+    border-color: black;
+}
+.message-us .message-form .message,textarea{
+    color: black;
+    border-color: black;
+
+}
+.message-us .message-form .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message-us .message-form .button input{
+    color: black;
+    height: 45px;
+    width: 150px;
+    border-radius: 35px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.575);
+    
+}
+
+/* footer */
+.footer-container{
+    background-color:#364037;
+    padding: 30px 250px 10px 250px;
+}
+.footer-container .footer{
+    display: grid;
+    grid-template-areas: 
+        "1s 2s";
+} 
+.footer-container .footer-logo-name img{
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+}
+.footer-container .footer .footer-logo-name{
+    grid-area: 1s;
+    display: flex;
+}
+.footer-container .footer .subscribe-section{
+    grid-area: 2s;
+}
+.footer-container .footer .subscribe-section form{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.footer-container .footer .subscribe-section form .subscription input{
+    width: 430px;
+    height: 40px;
+    color: black;
+}
+.footer-container .footer .subscribe-section form .subscribe-button input{
+    color: black;
+    height: 45px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #986c43;
+    margin-top: 5px;
+}
+.footer-container .copy-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

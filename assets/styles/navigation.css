@@ -1,0 +1,67 @@
+.home-section nav{
+    display: flex;
+    align-items: center;
+    background-color:#364037;
+    padding: 0 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.home-section nav img{
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+}
+.home-section nav .nav-title{
+    display: flex;
+    flex-direction: column;
+}
+.home-section nav .nav-title h3{
+    margin-left: 63px;
+    font-size: 25px;
+    font-weight: 100;
+}
+.home-section nav .nav-title h1{
+    font-size: 35px;
+    font-weight: 400;
+ }
+.home-section nav ul{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+.home-section nav ul li a{
+    font-size: 20px;
+    padding: 30px;
+}
+.home-section nav ul .menu{
+    position: relative;
+    padding: 28px;
+    cursor: pointer;
+}
+.home-section nav ul .menu-items{
+    position: absolute;
+    display: none;
+    top: 80px;
+    left: 17px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+    background-color: #272927;
+}
+.home-section nav ul .menu-items li{
+    padding: 20px;
+}
+.home-section nav ul .menu-items li a{
+    padding: 20px;
+}
+.home-section nav ul .menu-items li:hover{
+    background-color: rgba(0, 0, 255, 0.616);
+    cursor: pointer;
+}
+.home-section nav ul .menu:hover{
+    background-color: #6b4b2d;
+}
+.home-section nav ul .menu:hover .menu-items{
+    display: block;
+}
